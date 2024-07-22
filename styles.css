@@ -1,0 +1,274 @@
+ /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: url('images/background.jpg') no-repeat center center fixed; /* Ensure this path is correct */
+    background-size: cover;
+    color: #fff; /* Set text color to white for readability */
+    padding: 20px; /* Add padding to ensure content stays within the border */
+    box-sizing: border-box;
+}
+
+header {
+    background: transparent; /* Make header background transparent */
+    color: #f0f0f0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b3b5f1; /* Off-white color for the header text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f4ebf1; /* Set nav links to white */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #b3b5f1; /* Off-purple color for the header text */
+    color: #; /* Accent color */
+}
+
+#hero {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #dfd3d7; /* Set hero heading to white */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#hero p {
+    font-size: 1.25rem;
+    color: #b3b5f1; /* Set hero paragraph to white */
+    margin: 1rem 0 0;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 700px; /* Adjust max-width to fit within the tan boundary */
+    margin: auto;
+    text-align: center; /* Center text */
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #fff; /* Set headings to white */
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px; /* Fit within the tan boundary */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* General Image Styles */
+img {
+    max-width: 85%; /* Ensure images do not exceed their container size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center images and add some space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for images within sections to fit the tan boundary */
+section img {
+    max-width: 85%; /* Ensure images do not exceed their container size */
+    margin: 20px auto; /* Center images and add some space */
+}
+
+/* Projects Page Specific Styles */
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+}
+
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#projects .project-info {
+    margin-top: 1rem;
+}
+
+#projects .project-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #fff; /* Set project info heading to white */
+}
+
+/* Contact Page Specific Styles */
+#contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#contact .contact-image img {
+    max-width: 85%; /* Fit within the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .contact-info {
+    margin-top: 1rem;
+}
+
+footer {
+    background: transparent; /* Make footer background transparent */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Ensure text and images for Services and About pages fit within the tan boundary */
+#services, #about {
+    max-width: 600px; /* Fit within the tan boundary */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; /* Ensure padding within the boundary */
+}
+
+#services img, #about img {
+    max-width: 85%; /* Ensure images do not exceed their container size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center images and add some space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Service section styling for bubble effect */
+.service {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Rounded corners for bubble effect */
+    padding: 20px;
+    margin: 20px auto; /* Space between bubbles and center align */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    color: #333; /* Dark text color for readability */
+    max-width: 600px; /* Ensure the bubbles fit within the tan portion */
+}
+
+.service:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Adjust header font size for smaller screens */
+    }
+
+    #hero h1 {
+        font-size: 2.5rem; /* Adjust hero heading font size */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Adjust hero paragraph font size */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Adjust margin for nav links */
+    }
+
+    main {
+        padding: 1rem; /* Adjust main padding */
+        max-width: calc(100% - 40px); /* Full width for main content */
+    }
+
+    #contact .contact-content {
+        flex-direction: column; /* Stack contact content vertically */
+    }
+
+    #contact .contact-image {
+        max-width: calc(100% - 40px); /* Full width for contact image on smaller screens */
+    }
+
+    .service {
+        padding: 15px; /* Adjust service section padding */
+        margin: 15px 0; /* Adjust service section margin */
+    }
+}
+
+/* Video Container Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
